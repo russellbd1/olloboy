@@ -1,0 +1,225 @@
+/* Mobile devices (landscape phones, 320px and up) */
+@media (min-width: 320px) and (max-width: 575px) {
+
+.header_part{
+    display: none;
+}
+
+.wellcome_part .wellcome_content {
+   text-align: center;
+   padding: 30px 15px;
+  }
+  .wellcome_part .wellcome_content h1 {
+    font-size: 32px;
+  }
+  .wellcome_part .wellcome_accordian {
+    padding: 15px;
+  }
+  .property_part {
+    padding: 0px 0 60px;
+  }
+
+  .property_part .property_head h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;;
+  }
+  .property_part .item_manue {
+    float: none;
+    text-align: center;
+  }
+  .property_part .property_all .property_items p {
+    font-size: 12px;;
+  }
+
+  .property_part .property_all .property_items .property_picture h5 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 13px;
+  }
+  .property_part .property_all .property_items .property_picture h6 {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  .business_part .wellcome_all .sinein_content {
+    padding: 15px;   
+  }
+  .business_part .wellcome_all .sinein_content h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h1 {
+   font-size: 28px;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h5 {
+    font-size: 16px;
+  }
+
+  .toure__part .toure_slider.owl-carousel .owl-nav .owl-prev,
+  .toure__part .toure_slider.owl-carousel .owl-nav .owl-next {
+  display: none;
+  }
+  .booking_part .booking_all {
+   
+    padding: 15px;
+  }
+  .booking_part .booking_all .booking_content {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .booking_part .booking_all .booking_content h1 {
+   font-size: 28px;
+  }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .header_part{
+    display: none;
+}
+.property_part .property_head h2 {
+  text-align: center;
+  margin-bottom: 20px;;
+}
+.property_part .item_manue {
+  float: none;
+  text-align: center;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .wellcome_part {
+    padding: 60px 0px 0;
+  }
+  .wellcome_part .wellcome_content {
+    padding: 0 15px 15px;
+    margin-top: 0px;
+  }
+  .wellcome_part .wellcome_content h1 {
+    font-weight: 600;
+    padding: 10px 0px;
+    font-size: 18px;
+  }
+  .wellcome_part .wellcome_content p {
+    font-weight: 400;
+    color: #a8a3a3;
+    font-size: 14px;
+  }
+  .wellcome_part .wellcome_accordian {
+    padding:0 15px;
+  }
+  .wellcome_part .wellcome_accordian .accordion .nav-item .nav-link {
+  
+    padding: 5px 7px;
+    background: #f1f1f1;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+  }
+  .wellcome_part .wellcome_accordian .accordion .tab-pane h5 {
+    padding: 15px 5px;   
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .business_part .wellcome_all .sinein_content {
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .business_part .wellcome_all .sinein_content h1 {
+    padding: 15px 0px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .business_part .wellcome_all .sinein_content p {
+    line-height: 1.2;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count {
+    margin-top: 15px;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item {   
+    padding: 10px;   
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h1 {
+    font-size: 24px;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h5 {
+    font-size: 16px;
+  }
+
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wellcome_part {
+    padding: 60px 0px 0;
+  }
+  .wellcome_part .wellcome_content {
+    padding:0px  30px 10px;
+    margin-top: 0px;
+  }
+  .wellcome_part .wellcome_content h1 {
+    font-weight: 600;
+    padding: 10px 0px;
+    font-size: 28px;
+  }
+  .wellcome_part .wellcome_accordian {
+    padding:0 30px 30px;
+  }
+  .wellcome_part .wellcome_content p {
+   
+    font-size: 14px;
+  }
+  .wellcome_part .wellcome_accordian .accordion .nav-item .nav-link {  
+    padding: 8px 15px;  
+   
+  }
+  .wellcome_part .wellcome_accordian .accordion .tab-pane h5 {
+    
+    line-height: 1.6;
+  }
+  .business_part .wellcome_all .sinein_content {
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .business_part .wellcome_all .sinein_content h1 {
+    padding: 15px 0px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .business_part .wellcome_all .sinein_content p {
+    line-height: 1.2;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count {
+    margin-top: 15px;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item {   
+    padding: 10px;   
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h1 {
+    font-size: 24px;
+  }
+  .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h5 {
+    font-size: 16px;
+  }
+
+
+
+
+
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {}

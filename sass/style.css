@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+img,
+a,
+p,
+span,
+input,
+form,
+.btn,
+.lead,
+.navbar,
+.nav-link,
+.nav-item,
+.nav-brand,
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables */
+/* Mixins */
+/* Extend/Inheritance */
+.booking_part .booking_all .booking_content h1, .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h1, .business_part .wellcome_all .sinein_content h1, .wellcome_part .wellcome_content h1, .banner_part .carousel-item .banner_overlay .banner_text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 42px;
+}
+
+.toure__part .toure_heading h2, .business_part .wellcome_all .wellcom_form .wellcom_form_text h2, .property_part .property_head h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+}
+
+.banner_part .carousel-item .banner_overlay .banner_text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+
+.footer_part .footer_item h4, .footer_part .footer_icon .footer_icon_head h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+}
+
+.toure__part .toure_all .toure_items .toure_text h5, .business_part .wellcome_all .sinein_content .sinein_count .sinein_item h5, .business_part .wellcome_all .sinein_content h5, .property_part .property_all .property_items .property_picture h5, .property_part .property_all .property_items .property_price .price h5, .wellcome_part .wellcome_accordian .accordion .tab-pane h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.booking_part .booking_all .booking_content h6, .toure__part .toure_all .toure_items .toure_text .toure_text_head h6, .toure__part .toure_heading h6, .property_part .property_all .property_items .property_picture h6, .wellcome_part .wellcome_content h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+.booking_part .booking_all .booking_content p, .toure__part .toure_all .toure_items .toure_text p, .toure__part .toure_heading p, .business_part .wellcome_all .sinein_content p, .business_part .wellcome_all .wellcom_form .wellcom_form_text p, .property_part .property_all .property_items p, .wellcome_part .wellcome_content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.footer_part .footer_item a, .footer_part .footer_icon .foot_social a, .property_part .property_all .property_items h5 a, .navbar_part .navbar-nav .nav-item .dropdown-menu li a, .navbar_part .navbar-nav .nav-item .nav-link, .navbar_part a, .header_part .heading_social a, .header_part .heading_content a {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  transition: all linear 0.4s;
+}
+
+.booking_part .booking_all, .business_part .wellcome_all .wellcom_form, .banner_part .carousel-item {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+/* ================ header_part start ================= */
+.header_part {
+  background: #2e2828;
+}
+.header_part .heading_content {
+  margin-top: 4px;
+}
+.header_part .heading_content a {
+  color: #d1d1d1;
+}
+.header_part .heading_content a i {
+  color: #fd7e14;
+}
+.header_part .heading_social a {
+  margin-left: 5px;
+}
+.header_part .heading_social a i {
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  border: 1px solid #fd7e14;
+  color: #fd7e14;
+  text-align: center;
+  transition: all linear 0.4s;
+}
+.header_part .heading_social a i:hover {
+  background: #fd7e14;
+  color: #f1f1f1;
+  border: 1px solid #fd7e14;
+}
+
+/* ================ header_part end ================= */
+/* ================ navbar_part start ================= */
+.navbar_part a {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fd7e14;
+}
+.navbar_part .navbar-nav .nav-item {
+  padding: 0px 7px;
+}
+.navbar_part .navbar-nav .nav-item .nav-link {
+  color: #198754;
+  font-size: 16px;
+  font-weight: 500;
+}
+.navbar_part .navbar-nav .nav-item .nav-link.active {
+  color: #fd7e14;
+}
+.navbar_part .navbar-nav .nav-item .nav-link:hover {
+  color: #fd7e14;
+}
+.navbar_part .navbar-nav .nav-item .dropdown-menu {
+  top: 100%;
+  left: -8px;
+  margin-top: 25px;
+}
+.navbar_part .navbar-nav .nav-item .dropdown-menu li {
+  border-bottom: 1px solid #d3d6d4;
+}
+.navbar_part .navbar-nav .nav-item .dropdown-menu li:last-child {
+  border-bottom: 0;
+}
+.navbar_part .navbar-nav .nav-item .dropdown-menu li a {
+  font-weight: 500;
+  color: #198754;
+  font-size: 14px;
+}
+.navbar_part .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #D1E7DD;
+}
+.navbar_part .searchform {
+  height: 46px;
+  border: 1px solid #fd7e14;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.navbar_part .searchform .form-control {
+  height: 46px !important;
+  background: #ffffff !important;
+  color: #555555 !important;
+  font-size: 14px;
+  border-radius: 0px;
+  box-shadow: none !important;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+.navbar_part .searchform .form-control:focus, .navbar_part .searchform .form-control:active {
+  border-color: #555555;
+}
+.navbar_part .searchform .search {
+  width: 46px;
+  height: 46px;
+}
+.navbar_part .searchform .search span {
+  font-size: 20px;
+}
+
+/* ================ navbar_part end ================= */
+/* ================ banner_part start ================= */
+.banner_part .carousel-indicators button {
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+  line-height: 10px;
+  background: #5bc5f4;
+  border-radius: 50%;
+  opacity: 1;
+  border: none;
+  position: relative;
+}
+.banner_part .carousel-indicators button:after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  content: "";
+  border: 1px solid #2cbdb8;
+  border-radius: 50%;
+}
+.banner_part .carousel-indicators button.active {
+  background: #df6908;
+}
+.banner_part .carousel-indicators button.active:after {
+  border-color: #df6908;
+}
+.banner_part .carousel-item {
+  height: 100vh;
+}
+.banner_part .carousel-item .banner_overlay {
+  background: rgba(0, 0, 0, 0.44);
+}
+.banner_part .carousel-item .banner_overlay .banner_text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.banner_part .carousel-item .banner_overlay .banner_text h1 {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: 48px;
+}
+.banner_part .carousel-item .banner_overlay .banner_text h3 {
+  font-size: 16px;
+  color: #df6908;
+  padding: 10px 0px;
+}
+.banner_part .carousel-item .banner_overlay .banner_text .btn {
+  padding: 10px 40px;
+  background: #df6908;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  transition: all linear 0.4s;
+}
+.banner_part .carousel-item .banner_overlay .banner_text .btn:hover {
+  background: #0d6efd;
+}
+
+/* ================ banner_part end ================= */
+/* ================ wellcome_part start  ================= */
+.wellcome_part {
+  padding: 60px 0px;
+}
+.wellcome_part .wellcome_image img {
+  width: 100%;
+}
+.wellcome_part .wellcome_content {
+  padding: 30px;
+  margin-top: 0px;
+}
+.wellcome_part .wellcome_content h6 {
+  font-weight: 600;
+}
+.wellcome_part .wellcome_content h1 {
+  font-weight: 700;
+  padding: 30px 0px;
+}
+.wellcome_part .wellcome_content p {
+  font-weight: 500;
+  color: #a8a3a3;
+  font-size: 16px;
+}
+.wellcome_part .wellcome_accordian {
+  padding: 30px;
+}
+.wellcome_part .wellcome_accordian .accordion .nav-item .nav-link {
+  margin-left: 0px;
+  padding: 12px 15px;
+  background: #f1f1f1;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.wellcome_part .wellcome_accordian .accordion .nav-item .nav-link.active {
+  background: #2781db;
+  color: #f1f1f1;
+}
+.wellcome_part .wellcome_accordian .accordion .tab-pane h5 {
+  padding: 20px 15px;
+  background: #f1f1f1;
+  color: #a8a3a3;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* ================ wellcome_part end ================= */
+/* ================ property_part start =============== */
+.property_part {
+  padding: 60px 0;
+}
+.property_part .property_head h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.property_part .item_manue {
+  float: inline-end;
+}
+.property_part .item_manue ul li {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 35px;
+  cursor: pointer;
+}
+.property_part .item_manue ul li:after {
+  position: absolute;
+  right: -22px;
+  top: -1px;
+  content: "|";
+  color: #b1b0b0;
+}
+.property_part .item_manue ul li:last-child {
+  margin-right: 0;
+}
+.property_part .item_manue ul li:last-child:after {
+  display: none;
+}
+.property_part .property_all {
+  margin-top: 20px;
+}
+.property_part .property_all .property_image img {
+  width: 100%;
+}
+.property_part .property_all .property_items {
+  padding: 0 10px 15px;
+}
+.property_part .property_all .property_items .property_rent {
+  padding: 5px 8px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: small;
+  font-weight: 700;
+}
+.property_part .property_all .property_items .property_price {
+  margin-top: 15px;
+}
+.property_part .property_all .property_items .property_price .price h5 {
+  font-weight: 600;
+}
+.property_part .property_all .property_items .property_price .price h5 span {
+  font-size: small;
+  color: #555555;
+}
+.property_part .property_all .property_items h5 a {
+  color: rgb(30, 6, 167);
+  font-size: 18px;
+  font-weight: bold;
+}
+.property_part .property_all .property_items p {
+  font-weight: 500;
+}
+.property_part .property_all .property_items .property_picture {
+  margin-top: 10px;
+}
+.property_part .property_all .property_items .property_picture .property_pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.property_part .property_all .property_items .property_picture h5 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.property_part .property_all .property_items .property_picture h6 {
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+/* ============== business_part start =============== */
+.business_part {
+  background: #f1f1f1;
+}
+.business_part .wellcome_all .wellcom_form {
+  position: relative;
+  background: url(../image/about.jpg);
+  padding: 30px 0px;
+}
+.business_part .wellcome_all .wellcom_form .wellcom_form_text {
+  padding: 30px;
+}
+.business_part .wellcome_all .wellcom_form .wellcom_form_text p {
+  font-weight: 600;
+}
+.business_part .wellcome_all .wellcom_form .wellcom_form_text h2 {
+  font-size: 32px;
+}
+.business_part .wellcome_all .wellcom_form .wellcome_form_form {
+  padding: 0px 30px;
+}
+.business_part .wellcome_all .wellcom_form .wellcome_form_form .wel_form .box {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+.business_part .wellcome_all .wellcom_form .wellcome_form_form .wel_form .box::-moz-placeholder {
+  color: #fff;
+}
+.business_part .wellcome_all .wellcom_form .wellcome_form_form .wel_form .box::placeholder {
+  color: #fff;
+}
+.business_part .wellcome_all .wellcom_form .wellcome_form_form .wel_form .btn_sinein {
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.business_part .wellcome_all .sinein_content {
+  padding: 30px;
+  margin-top: 40px;
+}
+.business_part .wellcome_all .sinein_content h5 {
+  font-weight: 600;
+}
+.business_part .wellcome_all .sinein_content h1 {
+  padding: 20px 0px;
+}
+.business_part .wellcome_all .sinein_content p {
+  line-height: 2;
+}
+.business_part .wellcome_all .sinein_content .sinein_count {
+  margin-top: 30px;
+}
+.business_part .wellcome_all .sinein_content .sinein_count .sinein_item {
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  padding: 15px;
+  width: 100%;
+}
+.business_part .wellcome_all .sinein_content .sinein_count .sinein_item h1 {
+  color: #b2720b;
+  padding: 5px;
+}
+.business_part .wellcome_all .sinein_content .sinein_count .sinein_item h5 {
+  color: #c4c2bf;
+  font-weight: 600;
+}
+
+/* ============== business_part end =============== */
+/* ============== toure__part start ===============  */
+.toure__part {
+  padding: 60px 0;
+}
+.toure__part .toure_heading h6 {
+  font-weight: 500;
+}
+.toure__part .toure_heading h2 {
+  font-weight: 600;
+  padding: 15px 0;
+}
+.toure__part .toure_all {
+  padding-top: 35px;
+}
+.toure__part .toure_all .toure_items .toure_image {
+  overflow: hidden;
+}
+.toure__part .toure_all .toure_items .toure_image img {
+  width: 100%;
+  transition: 0.5s;
+}
+.toure__part .toure_all .toure_items .toure_image img:hover {
+  transform: scale(1.3) rotate(10deg);
+}
+.toure__part .toure_all .toure_items .toure_text {
+  background-color: rgba(250, 242, 242, 0.6039215686);
+  padding: 10px 10px 20px;
+}
+.toure__part .toure_all .toure_items .toure_text .toure_text_head h6 {
+  padding: 3px 8px;
+  border: 1px solid rgba(46, 40, 40, 0.4392156863);
+  font-size: 10px;
+}
+.toure__part .toure_all .toure_items .toure_text p {
+  color: #b1b0b0;
+  padding: 10px 0;
+}
+.toure__part .toure_slider {
+  position: relative;
+}
+.toure__part .toure_slider.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -1%;
+  top: 50%;
+  transform: translateY(50%);
+}
+.toure__part .toure_slider.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -1%;
+  top: 50%;
+  transform: translateY(50%);
+}
+.toure__part .toure_slider.owl-carousel .owl-dots {
+  text-align: center;
+}
+.toure__part .toure_slider.owl-carousel .owl-dots .owl-dot {
+  height: 10px;
+  width: 10px;
+  background: #e03030;
+  border-radius: 50%;
+  margin: 5px;
+  position: relative;
+}
+.toure__part .toure_slider.owl-carousel .owl-dots .owl-dot:after {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: 0;
+  bottom: 0;
+  width: 14px;
+  height: 14px;
+  content: "";
+  border: 1px solid #ec2d2d;
+  border-radius: 50%;
+}
+.toure__part .toure_slider.owl-carousel .owl-dots .owl-dot.active {
+  background: #f2910d;
+}
+.toure__part .toure_slider.owl-carousel .owl-dots .owl-dot.active:after {
+  border-color: #f2910d;
+}
+
+/* ============== toure__part end ===============  */
+/* ============== booking_part start ===============  */
+.booking_part {
+  padding: 0 0 60px;
+}
+.booking_part .booking_all {
+  background: linear-gradient(rgba(15, 23, 43, 0.7), rgba(15, 23, 43, 0.7)), url(../image/booking.jpg);
+  padding: 45px;
+}
+.booking_part .booking_all .booking_content {
+  margin-top: 40px;
+}
+.booking_part .booking_all .booking_content h6 {
+  font-weight: 500;
+}
+.booking_part .booking_all .booking_content h1 {
+  font-weight: 600;
+}
+.booking_part .booking_all .booking_content p {
+  font-weight: 400;
+}
+.booking_part .booking_all .booking_content a.btn {
+  font-family: "Poppins", sans-serif;
+}
+.booking_part .booking_all .booking_form .form-control {
+  color: #fff;
+}
+.booking_part .booking_all .booking_form .form-control::-moz-placeholder {
+  color: #b6b2b2;
+}
+.booking_part .booking_all .booking_form .form-control::placeholder {
+  color: #b6b2b2;
+}
+.booking_part .booking_all .booking_form .btn {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* ============== booking_part end ===============  */
+/* =============== footer_part start ================= */
+.footer_part {
+  padding: 60px 0;
+  background: #778ceb;
+}
+.footer_part .footer_icon .foot_social a {
+  color: #ffffff;
+  margin-bottom: 5px;
+  transition: all linear 0.4s;
+}
+.footer_part .footer_icon .foot_social a:hover {
+  letter-spacing: 2px;
+}
+.footer_part .footer_icon .foot_social_icon a i {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #fd7e14;
+  border: 1px solid #fd7e14;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  transition: all linear 0.4s;
+}
+.footer_part .footer_icon .foot_social_icon a:hover i {
+  background: #07578d;
+  border: 1px solid #07578d;
+}
+.footer_part .footer_item a {
+  color: #ffffff;
+  margin-bottom: 5px;
+  transition: all linear 0.4s;
+}
+.footer_part .footer_item a:hover {
+  letter-spacing: 2px;
+}/*# sourceMappingURL=style.css.map */

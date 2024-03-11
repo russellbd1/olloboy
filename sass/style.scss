@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li,
+img,
+a,
+p,
+span,
+input,
+form,
+.btn,
+.lead,
+.navbar,
+.nav-link,
+.nav-item,
+.nav-brand,
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+$font1: 'Poppins',
+sans-serif;
+$font2: 'Inter',
+sans-serif;
+
+$offwhite: #f1f1f1;
+$gray10: #d1d1d1;
+$sky1: #0872b9;
+$sky2: #5bc5f4;
+$orange: #fd7e14;
+$teal: #20c997;
+$rgb: rgba(0, 0, 0, 0.4);
+
+
+/* Mixins */
+@mixin tr($time) {
+    -webkit-transition: all linear $time;
+    -moz-transition: all linear $time;
+    -ms-transition: all linear $time;
+    -o-transition: all linear $time;
+    transition: all linear $time;
+}
+
+@mixin br($val) {
+    -webkit-border-radius: $val;
+    -moz-border-radius: $val;
+    -ms-border-radius: $val;
+    -o-border-radius: $val;
+    border-radius: $val;
+}
+
+/* Extend/Inheritance */
+
+
+%h1 {
+    font-family: $font1;
+    font-size: 42px;
+}
+
+%h2 {
+    font-family: $font1;
+    font-size: 32px;
+}
+
+%h3 {
+    font-family: $font1;
+    font-size: 28px;
+}
+
+%h4 {
+    font-family: $font1;
+    font-size: 24px;
+}
+
+%h5 {
+    font-family: $font1;
+    font-size: 20px;
+}
+
+%h6 {
+    font-family: $font1;
+    font-size: 16px;
+}
+
+%p {
+    font-family: $font1;
+    font-size: 14px;
+}
+
+%a {
+    font-family: $font2;
+    font-size: 14px;
+    @include tr(0.4s);
+}
+
+%bg {
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/* ================ header_part start ================= */
+
+.header_part {
+    background: #2e2828;
+
+    .heading_content {
+        margin-top: 4px;
+
+        a {
+            @extend %a;
+            color: #d1d1d1;
+
+            i {
+                color: $orange;
+            }
+        }
+    }
+
+    .heading_social {
+        a {
+            @extend %a;
+            margin-left: 5px;
+
+            i {
+                height: 35px;
+                width: 35px;
+                line-height: 35px;
+                border: 1px solid $orange;
+                color: $orange;
+                text-align: center;
+                @include tr(0.4s);
+
+                &:hover {
+                    background: $orange;
+                    color: #f1f1f1;
+                    border: 1px solid $orange;
+                }
+            }
+        }
+    }
+}
+
+/* ================ header_part end ================= */
+/* ================ navbar_part start ================= */
+
+.navbar_part {
+    a {
+        @extend %a;
+        font-size: 32px;
+        font-weight: 700;
+        color: $orange;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            padding: 0px 7px;
+
+            .nav-link {
+                color: #198754;
+                font-size: 16px;
+                @extend %a;
+                font-weight: 500;
+
+                &.active {
+                    color: $orange;
+                }
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+
+            .dropdown-menu {
+                top: 100%;
+                left: -8px;
+                margin-top: 25px;
+
+                li {
+                    border-bottom: 1px solid #d3d6d4;
+
+                    &:last-child {
+                        border-bottom: 0;
+                    }
+
+                    a {
+                        @extend %a;
+                        font-weight: 500;
+                        color: #198754;
+                        font-size: 14px;
+                    }
+                }
+
+                .dropdown-item {
+                    &:hover {
+                        background-color: #D1E7DD;
+                    }
+                }
+            }
+        }
+    }
+
+    .searchform {
+        height: 46px;
+        border: 1px solid $orange;
+        overflow: hidden;
+        @include br(5px);
+
+        .form-control {
+            height: 46px !important;
+            background: #ffffff !important;
+            color: #555555 !important;
+            font-size: 14px;
+            border-radius: 0px;
+            box-shadow: none !important;
+            font-family: $font1;
+            border: none;
+
+            &:focus,
+            &:active {
+                border-color: #555555;
+            }
+        }
+
+        .search {
+            width: 46px;
+            height: 46px;
+
+            span {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+/* ================ navbar_part end ================= */
+/* ================ banner_part start ================= */
+
+
+.banner_part {
+    .carousel-indicators button {
+        height: 10px;
+        width: 10px;
+        margin: 5px;
+        line-height: 10px;
+        background: #5bc5f4;
+        @include br (50%);
+        opacity: 1;
+        border: none;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: 0;
+            bottom: 0;
+            width: 14px;
+            height: 14px;
+            content: '';
+            border: 1px solid #2cbdb8;
+            @include br (50%);
+        }
+
+        &.active {
+            background: #df6908;
+
+            &:after {
+                border-color: #df6908;
+            }
+        }
+    }
+
+    .carousel-item {
+        height: 100vh;
+        @extend %bg;
+
+        .banner_overlay {
+            background: rgba(0, 0, 0, 0.44);
+
+            .banner_text {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                h1 {
+                    @extend %h1;
+                    color: #ffffff;
+                    text-transform: capitalize;
+                    font-size: 48px;
+                }
+
+                h3 {
+                    @extend %h3;
+                    font-size: 16px;
+                    color: #df6908;
+                    padding: 10px 0px;
+                }
+
+                .btn {
+                    padding: 10px 40px;
+                    background: #df6908;
+                    color: #ffffff;
+                    font-family: $font1;
+                    @include tr (0.4s);
+
+                    &:hover {
+                        background: #0d6efd;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ================ banner_part end ================= */
+/* ================ wellcome_part start  ================= */
+
+
+.wellcome_part {
+    padding: 60px 0px;
+
+    .wellcome_image {
+        img {
+            width: 100%;
+        }
+    }
+
+    .wellcome_content {
+        padding: 30px;
+        margin-top: 0px;
+
+        h6 {
+            @extend %h6;
+            font-weight: 600;
+        }
+
+        h1 {
+            @extend %h1;
+            font-weight: 700;
+            padding: 30px 0px;
+        }
+
+        p {
+            @extend %p;
+            font-weight: 500;
+            color: #a8a3a3;
+            font-size: 16px;
+        }
+    }
+
+    .wellcome_accordian {
+        padding: 30px;
+
+        .accordion {
+            .nav-item {
+                .nav-link {
+                    margin-left: 0px;
+                    padding: 12px 15px;
+                    background: #f1f1f1;
+                    color: #000;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-family: $font1;
+
+                    &.active {
+                        background: #2781db;
+                        color: #f1f1f1;
+                    }
+                }
+            }
+
+            .tab-pane {
+                h5 {
+                    padding: 20px 15px;
+                    background: #f1f1f1;
+                    @extend %h5;
+                    color: #a8a3a3;
+                    font-family: $font1;
+                    font-size: 15px;
+                    line-height: 1.7;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+/* ================ wellcome_part end ================= */
+/* ================ property_part start =============== */
+.property_part {
+    padding: 60px 0;
+
+    .property_head {
+        h2 {
+            @extend %h2;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    .item_manue {
+        float: inline-end;
+
+        ul {
+            li {
+                position: relative;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 500;
+                margin-right: 35px;
+                cursor: pointer;
+
+                &:after {
+                    position: absolute;
+                    right: -22px;
+                    top: -1px;
+                    content: "|";
+                    color: #b1b0b0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .property_all {
+        margin-top: 20px;
+
+
+        .property_image {
+            img {
+                width: 100%;
+            }
+        }
+
+        .property_items {
+
+            padding: 0 10px 15px;
+
+            .property_rent {
+                padding: 5px 8px;
+                color: #ffffff;
+                letter-spacing: 1px;
+                font-size: small;
+                font-weight: 700;
+            }
+
+            .property_price {
+                margin-top: 15px;
+
+                .price {
+                    h5 {
+                        @extend %h5;
+                        font-weight: 600;
+
+                        span {
+                            font-size: small;
+                            color: #555555;
+                        }
+                    }
+                }
+            }
+
+            h5 {
+                a {
+                    @extend %a;
+                    color: rgb(30, 6, 167);
+                    font-size: 18px;
+                    ;
+                    font-weight: bold;
+
+                }
+            }
+
+            p {
+                @extend %p;
+                font-weight: 500;
+
+            }
+
+            .property_picture {
+                margin-top: 10px;
+
+                .property_pic {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+
+                h5 {
+                    @extend %h5;
+                    font-weight: 700;
+                    font-size: 16px;
+                    margin-top: 10px;
+                }
+
+                h6 {
+                    @extend %h6;
+                    font-size: 14px;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+}
+
+/* ============== business_part start =============== */
+
+.business_part {
+    background: #f1f1f1;
+
+    .wellcome_all {
+        .wellcom_form {
+            position: relative;
+            background: url(../image/about.jpg);
+            @extend %bg;
+            padding: 30px 0px;
+
+            .wellcom_form_text {
+                padding: 30px;
+
+                p {
+                    @extend %p;
+                    font-weight: 600;
+                }
+
+                h2 {
+                    @extend %h2;
+                    font-size: 32px;                 
+                }
+            }
+
+            .wellcome_form_form {
+                padding: 0px 30px;
+
+                .wel_form {
+                    .box {
+                        width: 100%;
+                        padding: 15px;
+                        outline: none;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid #fff;
+                        color: #fff;
+
+                        &::placeholder {
+                            color: #fff;
+                        }
+                    }
+
+                    .btn_sinein {
+                        width: 100%;
+                        margin-bottom: 40px;
+                        padding: 15px;
+                        font-family: $font1;
+                    }
+                }
+            }
+        }
+
+        .sinein_content {
+            padding: 30px;
+            margin-top: 40px;
+
+            h5 {
+                @extend %h5;
+                font-weight: 600;
+            }
+
+            h1 {
+                @extend %h1;
+                padding: 20px 0px;
+            }
+
+            p {
+                @extend %p;
+                line-height: 2;
+            }
+
+            .sinein_count {
+                margin-top: 30px;
+
+                .sinein_item {
+                    border: 1px solid rgba(0, 0, 0, 0.29);
+                    padding: 15px;
+                    width: 100%;
+
+                    h1 {
+                        @extend %h1;
+                        color: #b2720b;
+                        padding: 5px;
+                    }
+
+                    h5 {
+                        @extend %h5;
+                        color: #c4c2bf;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ============== business_part end =============== */
+
+/* ============== toure__part start ===============  */
+.toure__part {
+    padding: 60px 0;
+
+    .toure_heading {
+        h6 {
+            @extend %h6;
+            font-weight: 500;
+        }
+
+        h2 {
+            @extend %h2;
+            font-weight: 600;
+            padding: 15px 0;;
+        }
+
+        p {
+            @extend %p;
+        }
+    }
+
+    .toure_all {
+        padding-top: 35px;
+
+        .toure_items {
+            .toure_image {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.3) rotate(10deg);
+                    }
+                }
+            }
+
+            .toure_text {
+                background-color: #faf2f29a;
+                padding: 10px 10px 20px;
+
+                .toure_text_head {
+                    h6 {
+                        @extend %h6;
+                        padding: 3px 8px;
+                        border: 1px solid #2e282870;
+                        font-size: 10px;
+                    }
+                }
+
+                h5 {
+                    @extend %h5;
+                }
+
+                p {
+                    @extend %p;
+                    color: #b1b0b0;
+                    padding: 10px 0;                  
+                }
+            }
+        }
+    }
+
+    .toure_slider {
+        position: relative;
+
+        &.owl-carousel {
+            .owl-nav {
+                .owl-prev {
+                    position: absolute;
+                    left: -1%;
+                    top: 50%;
+                    transform: translateY(50%);
+                }
+
+                .owl-next {
+                    position: absolute;
+                    right: -1%;
+                    top: 50%;
+                    transform: translateY(50%);
+                }
+            }
+
+            .owl-dots {
+                text-align: center;
+
+                .owl-dot {
+                    height: 10px;
+                    width: 10px;
+                    background: #e03030;
+                    @include br (50%);
+                    margin: 5px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        top: -2px;
+                        left: -2px;
+                        right: 0;
+                        bottom: 0;
+                        width: 14px;
+                        height: 14px;
+                        content: '';
+                        border: 1px solid #ec2d2d;
+                        @include br (50%);
+                    }
+
+                    &.active {
+                        background: #f2910d;
+
+                        &:after {
+                            border-color: #f2910d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ============== toure__part end ===============  */
+
+/* ============== booking_part start ===============  */
+
+.booking_part {
+padding: 0 0 60px;
+    .booking_all {
+        background: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)), url(../image/booking.jpg);
+        @extend %bg;
+        padding: 45px;
+
+        .booking_content {
+            margin-top: 40px;
+
+            h6 {
+                @extend %h6;
+                font-weight: 500;
+            }
+
+            h1 {
+                @extend %h1;
+                font-weight: 600;
+            }
+
+            p {
+                @extend %p;
+                font-weight: 400;
+            }
+
+            a.btn {
+                font-family: $font1;
+            }
+        }
+
+        .booking_form {
+            .form-control {
+                color: #fff;
+
+                &::placeholder {
+                    color: #b6b2b2;
+                }
+               
+            }
+            .btn{
+                font-family: $font1;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+/* ============== booking_part end ===============  */
+
+/* =============== footer_part start ================= */
+.footer_part{
+    padding: 60px 0;
+    background: #778ceb;
+    .footer_icon{
+        .footer_icon_head{
+            h4{
+                @extend %h4;
+            }           
+        }
+        .foot_social{
+            a{
+                @extend %a; 
+                color: #ffffff;
+                margin-bottom: 5px;
+                @include tr(0.4s); 
+                &:hover{
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .foot_social_icon{
+            a{
+                i{
+                    height: 35px;
+                    width: 35px;
+                    @include br(50%);
+                    background: #fd7e14;
+                    border: 1px solid #fd7e14;
+                    line-height: 35px;
+                    text-align: center;
+                    color: #ffffff; 
+                    @include tr(0.4s); 
+                }
+                &:hover{
+                    i{
+                        background: #07578d;
+                        border: 1px solid #07578d;
+                    }
+                }
+            }
+        }       
+    }
+    .footer_item{
+        h4{
+            @extend %h4;
+        }    
+        a{
+            @extend %a; 
+            color: #ffffff;
+            margin-bottom: 5px;
+            @include tr(0.4s); 
+            &:hover{
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
